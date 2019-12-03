@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestAPI.BLL\TestAPI.BLL\TestAPI.BLL.csproj" />
+    <ProjectReference Include="..\..\TestAPI.DAL\TestAPI.DAL\TestAPI.DAL.csproj" />
+    <ProjectReference Include="..\..\TestAPI.Model\TestAPI.Model\TestAPI.Model.csproj" />
+  </ItemGroup>
+
 </Project>

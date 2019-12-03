@@ -4438,6 +4438,36 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "TestAPI.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/TestAPI.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TestAPI.BLL.dll": {}
+        }
+      },
+      "TestAPI.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/TestAPI.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TestAPI.DAL.dll": {}
+        }
+      },
+      "TestAPI.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/TestAPI.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TestAPI.Model.dll": {}
+        }
       }
     }
   },
@@ -12073,13 +12103,31 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "TestAPI.BLL/1.0.0": {
+      "type": "project",
+      "path": "../../TestAPI.BLL/TestAPI.BLL/TestAPI.BLL.csproj",
+      "msbuildProject": "../../TestAPI.BLL/TestAPI.BLL/TestAPI.BLL.csproj"
+    },
+    "TestAPI.DAL/1.0.0": {
+      "type": "project",
+      "path": "../../TestAPI.DAL/TestAPI.DAL/TestAPI.DAL.csproj",
+      "msbuildProject": "../../TestAPI.DAL/TestAPI.DAL/TestAPI.DAL.csproj"
+    },
+    "TestAPI.Model/1.0.0": {
+      "type": "project",
+      "path": "../../TestAPI.Model/TestAPI.Model/TestAPI.Model.csproj",
+      "msbuildProject": "../../TestAPI.Model/TestAPI.Model/TestAPI.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "TestAPI.BLL >= 1.0.0",
+      "TestAPI.DAL >= 1.0.0",
+      "TestAPI.Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12089,11 +12137,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\TestAPI\\TestAPI\\TestAPI.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\github\\testapi\\TestAPI\\TestAPI\\TestAPI.csproj",
       "projectName": "TestAPI",
-      "projectPath": "C:\\Users\\User\\source\\repos\\TestAPI\\TestAPI\\TestAPI.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\github\\testapi\\TestAPI\\TestAPI\\TestAPI.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\TestAPI\\TestAPI\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\github\\testapi\\TestAPI\\TestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12111,7 +12159,17 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\User\\Documents\\github\\testapi\\TestAPI.BLL\\TestAPI.BLL\\TestAPI.BLL.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\github\\testapi\\TestAPI.BLL\\TestAPI.BLL\\TestAPI.BLL.csproj"
+            },
+            "C:\\Users\\User\\Documents\\github\\testapi\\TestAPI.DAL\\TestAPI.DAL\\TestAPI.DAL.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\github\\testapi\\TestAPI.DAL\\TestAPI.DAL\\TestAPI.DAL.csproj"
+            },
+            "C:\\Users\\User\\Documents\\github\\testapi\\TestAPI.Model\\TestAPI.Model\\TestAPI.Model.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\github\\testapi\\TestAPI.Model\\TestAPI.Model\\TestAPI.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
